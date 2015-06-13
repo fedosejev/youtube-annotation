@@ -4,7 +4,8 @@ var JsonFormatExample = React.createClass({
   render: function () {
 
     var textStyle = {
-      color: '#000',
+      fontFamily: 'Monospace',
+      color: '#e74c3c',
       fontSize: '18px',
       fontWeight: '300',
       textAlign: 'center',

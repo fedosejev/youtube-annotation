@@ -21,6 +21,7 @@ var Video = React.createClass({
 
   onPlayerReady: function (event) {
     this.props.onPlayerReady();
+    event.target.playVideo();
   },
 
   onPlayerStateChange: function (event) {

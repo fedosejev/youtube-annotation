@@ -37,7 +37,8 @@ var Upload = React.createClass({
     fileReader.readAsText(file);
   },
 
-  handleClick: function (event) {
+  handleSubmit: function (event) {
+    event.preventDefault();
     this.props.onPlay(this.state.videoId, this.state.data);
   },
 
@@ -48,11 +49,20 @@ var Upload = React.createClass({
     };
 
     var h2Style = {
-      color: '#e74c3c',
+      //color: '#e74c3c',
+      color: '#000',
       fontSize: '28px',
-      fontWeight: '600',
-      textTransform: 'uppercase',
+      fontWeight: '500',
+      //textTransform: 'uppercase',
       textAlign: 'center'
+    };
+
+    var formStyle = {
+      margin: '10px 0'
+    };
+
+    var buttonStyle = {
+      marginLeft: '5px'
     };
 
     return (
@@ -60,17 +70,22 @@ var Upload = React.createClass({
         <FileDragAndDrop onDrop={this.handleDrop}>
           <div className="container-fluid" style={containerStyle}>
 
-            <h2 style={h2Style}>1. Drag and drop your JSON file</h2>
+            <h2 style={h2Style}>1. Drag and drop your JSON file:</h2>
 
             <JsonFormatExample data={this.state.data} />
 
-            <h2 style={h2Style}>2. Tell YouTube video id:</h2>
+            <h2 style={h2Style}>2. Provide YouTube video id:</h2>
 
             <div className="row">
-              <div className="col-md-2 col-md-offset-5 text-center">
+              <div className="col-md-6 col-md-offset-3 text-center">
 
-                <input type="text" className="form-control input-lg" placeholder="" value={this.state.videoId} onChange={this.handleInputChange} />
-                <button className="btn btn-default" onClick={this.handleClick}>Play</button>
+                <form className="form-inline" style={formStyle} onSubmit={this.handleSubmit}>
+                  <div className="form-group">
+                    <input type="text" className="form-control input-lg" value={this.state.videoId} onChange={this.handleInputChange} />
+                  </div>
+
+                  <button type="submit" className="btn btn-default btn-danger btn-lg" style={buttonStyle}>Play</button>
+                </form>
 
               </div>
             </div>
