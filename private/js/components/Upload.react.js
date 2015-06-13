@@ -70,7 +70,7 @@ var Upload = React.createClass({
         <FileDragAndDrop onDrop={this.handleDrop}>
           <div className="container-fluid" style={containerStyle}>
 
-            <h2 style={h2Style}>1. Drag and drop your JSON file:</h2>
+            <h2 style={h2Style}>1. Drag and drop your annotation in JSON file:</h2>
 
             <JsonFormatExample data={this.state.data} />
 
