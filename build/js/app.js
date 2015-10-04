@@ -25,8 +25,8 @@ var Application = React.createClass({
 var routes = React.createElement(
   Route,
   { name: 'application', path: '/', handler: Application },
-  React.createElement(DefaultRoute, { name: 'uploadAndView', handler: UploadAndView }),
-  React.createElement(NotFoundRoute, { handler: UploadAndView })
+  React.createElement(DefaultRoute, { path: '/youtube-annotation/', name: 'uploadAndView', handler: UploadAndView }),
+  React.createElement(NotFoundRoute, { handler: NotFound })
 );
 
 Router.run(routes, Router.HistoryLocation, function (Handler, state) {
