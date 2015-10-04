@@ -11,3 +11,8 @@ Annotate YouTube videos.
   "4": "Fourth second, people!"
 }
 ```
+
+## How to deploy to GitHub Pages
+
+`git subtree push --prefix build origin gh-pages`
+
