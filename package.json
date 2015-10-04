@@ -13,6 +13,7 @@
     "http": "0.0.0",
     "path": "^0.11.14",
     "react": "^0.13.3",
+    "react-dom": "^0.14.0-rc1",
     "react-file-drag-and-drop": "^0.1.4",
     "react-router": "^0.13.2",
     "react-tools": "^0.13.3",
@@ -20,7 +21,9 @@
     "swig": "^1.4.2",
     "vinyl-source-stream": "^1.1.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "babelify": "^6.3.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
