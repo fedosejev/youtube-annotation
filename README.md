@@ -1,6 +1,8 @@
 # YouTube Annotation
 
-Annotate YouTube videos. Demo: http://fedosejev.github.io/youtube-annotation/
+Annotate YouTube videos.
+
+Demo: http://fedosejev.github.io/youtube-annotation/
 
 ## Annotation format
 
