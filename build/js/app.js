@@ -26,7 +26,7 @@ var routes = React.createElement(
   Route,
   { name: 'application', path: '/', handler: Application },
   React.createElement(DefaultRoute, { name: 'uploadAndView', handler: UploadAndView }),
-  React.createElement(NotFoundRoute, { handler: NotFound })
+  React.createElement(NotFoundRoute, { handler: UploadAndView })
 );
 
 Router.run(routes, Router.HistoryLocation, function (Handler, state) {
