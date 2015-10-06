@@ -19,7 +19,7 @@ var Application = React.createClass({
 
 var routes = (
   <Route name="application" path="/" handler={Application}>
-    <DefaultRoute path="/youtube-annotation/" name="uploadAndView" handler={UploadAndView} />
+    <DefaultRoute name="uploadAndView" handler={UploadAndView} />
     <NotFoundRoute handler={NotFound}/>
   </Route>
 );
