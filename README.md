@@ -2,13 +2,17 @@
 
 Annotate YouTube videos.
 
+## Demo
+
+http://fedosejev.github.io/youtube-annotation/
+
 ## Annotation format
 
 ```json
 {
-  "0": "Hello this is it!",
-  "1": "Nice!",
-  "4": "Fourth second, people!"
+  "0": "First second",
+  "1": "Second second",
+  "2": "Third second"
 }
 ```
 
