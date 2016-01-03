@@ -2,7 +2,7 @@
 
 Annotate YouTube videos.
 
-## Demo
+## Live
 
 http://fedosejev.github.io/youtube-annotation/
 
